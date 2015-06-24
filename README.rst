@@ -2,19 +2,11 @@
 shade-ansible
 =============
 
-Ansible modules that use shade to talk to OpenStack
+This repo is abandoned. Shade exists in
+http://git.openstack.org/cgit/openstack-infra/shade
 
-These are written for ansible 1.8, which means you may have to run from
-the asible git repo.
+The ansible modules are all targetting
+https://github.com/ansible/ansible-modules-core
 
-To use, just pip install this repo, set ANSIBLE_MODULES_PATH to include
-the modules dir - so probably `/usr/local/lib/python2.7/site-packages/shade_ansible/modules`.
-
-example.yaml contains an example of a playbook consuming these. It assumes that
-there is a cloud named `mordred` in your `os-client-config` compliant
-clouds.yaml.
-
-Features
---------
-
-* TODO
+Guidelines are in
+https://github.com/ansible/ansible-modules-core/blob/devel/cloud/openstack/README.md
